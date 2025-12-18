@@ -1,6 +1,6 @@
 # Go Web Scraper
 
-Siteye gir, HTML'ini al, screenshot'unu çek, linklerini topla. Hepsi bu kadar.
+Go dilinde yazılmış hafif ve hızlı bir web scraping aracı. Herhangi bir web sitesinin içeriğini analiz etmek, kaynak kodunu indirmek ve görsel dokümantasyon oluşturmak için geliştirilmiştir.
 
 ## Ne yapıyor bu?
 
@@ -23,7 +23,7 @@ go run scraper.go
 
 ## Nasıl kullanılıyor?
 
-Çalıştır, domain gir, enter bas. O kadar.
+Çalıştır, domain gir, enter bas.
 
 ```bash
 $ go run scraper.go
