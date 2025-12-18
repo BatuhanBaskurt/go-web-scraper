@@ -1,32 +1,47 @@
-🕸️ Go Scraper & SS Tool
-Verdiğin herhangi bir web sitesinin linklerini toplayan, HTML'ini indiren ve sayfanın tam boy ekran görüntüsünü alan basit bir Go aracı.
+Go Web Scraper
+Siteye gir, HTML'ini al, screenshot'unu çek, linklerini topla. Hepsi bu kadar.
+Ne yapıyor bu?
+Basit bir web scraper. Verdiğin URL'e gidip:
 
-🛠️ Ne İşe Yarar?
-Link Ayıklama: Sayfadaki bütün href linklerini bulur ve ekrana basar.
+📄 Sayfanın HTML'ini indiriyor
+📸 Tam sayfa ekran görüntüsü alıyor (1920x1080)
+🔗 İçindeki bütün linkleri buluyor
 
-HTML Kayıt: Sayfanın kaynak kodunu .html olarak kaydeder.
-
-Screenshot: Headless Chrome kullanarak sayfanın 1920x1080 çözünürlüğünde görselini alır (.png).
-
-🚀 Kullanım
-Bağımlılıkları yüklemek için:
-
-Bash
-
+Kurulum
+bashgit clone https://github.com/BatuhanBaskurt/go-web-scraper.git
+cd go-web-scraper
 go mod tidy
-Çalıştırmak için:
+go run scraper.go
+Gerekli şeyler: Go 1.16+ ve Chrome/Chromium
+Nasıl kullanılıyor?
+Çalıştır, domain gir, enter bas. O kadar.
+bash$ go run scraper.go
+Lütfen bir domain girin örn: https://example.com : github.com
+Program şunları oluşturacak:
 
-Bash
+example.com.html - Sayfanın kaynak kodu
+example.com_SS.png - Ekran görüntüsü
+Terminal'de link listesi
 
-go run main.go
-📦 Gereksinimler
-Go
+Örnek çıktı
+bashGirilen domain: https://github.com , çekme işlemi başlatılıyor...
+Girilen domainin bilgileri başarıyla çekildi. bulundugunuz dizini kontrol edin
+Fotograf başarıyla kaydedildi: github.com_SS.png
 
-Chrome/Chromium (Screenshot alabilmesi için sistemde yüklü olmalı)
+domain içerisinde bulunan linkler:
+ 1. https://github.com/features
+ 2. https://github.com/enterprise
+ 3. https://github.com/pricing
+Teknik detaylar
+Kullanılan paketler:
 
-📝 Bilgi
-Dosya İsimleri: URL'den otomatik temizlenerek oluşturulur.
+Colly - Scraping için
+ChromeDP - Screenshot için
 
-Hata Yönetimi: Bağlantı hataları veya yanlış domain durumlarında terminale hata basar.
+Hatalar
+Bir şeyler ters giderse (yanlış domain, timeout, DNS hatası vs.) program sana söylüyor. Panik yok.
+👨‍💻
+Batuhan Başkurt
+@BatuhanBaskurt
 
-Bekleme Süresi: Sayfa tam yüklensin diye ekran görüntüsü almadan önce 2 saniye bekler.
+Not: Bu araç eğitim amaçlı. Scraping yaparken sitelerin kurallarına dikkat et.
