@@ -1,30 +1,45 @@
-Go Web Scraper
+# Go Web Scraper
+
 Siteye gir, HTML'ini al, screenshot'unu çek, linklerini topla. Hepsi bu kadar.
-Ne yapıyor bu?
+
+## Ne yapıyor bu?
+
 Basit bir web scraper. Verdiğin URL'e gidip:
 
-📄 Sayfanın HTML'ini indiriyor
-📸 Tam sayfa ekran görüntüsü alıyor (1920x1080)
-🔗 İçindeki bütün linkleri buluyor
+- 📄 Sayfanın HTML'ini indiriyor
+- 📸 Tam sayfa ekran görüntüsü alıyor (1920x1080)
+- 🔗 İçindeki bütün linkleri buluyor
 
-Kurulum
-bashgit clone https://github.com/BatuhanBaskurt/go-web-scraper.git
+## Kurulum
+
+```bash
+git clone https://github.com/BatuhanBaskurt/go-web-scraper.git
 cd go-web-scraper
 go mod tidy
 go run scraper.go
-Gerekli şeyler: Go 1.16+ ve Chrome/Chromium
-Nasıl kullanılıyor?
+```
+
+**Gerekli şeyler:** Go 1.16+ ve Chrome/Chromium
+
+## Nasıl kullanılıyor?
+
 Çalıştır, domain gir, enter bas. O kadar.
-bash$ go run scraper.go
+
+```bash
+$ go run scraper.go
 Lütfen bir domain girin örn: https://example.com : github.com
+```
+
 Program şunları oluşturacak:
 
-example.com.html - Sayfanın kaynak kodu
-example.com_SS.png - Ekran görüntüsü
-Terminal'de link listesi
+- `example.com.html` - Sayfanın kaynak kodu
+- `example.com_SS.png` - Ekran görüntüsü
+- Terminal'de link listesi
 
-Örnek çıktı
-bashGirilen domain: https://github.com , çekme işlemi başlatılıyor...
+## Örnek çıktı
+
+```bash
+Girilen domain: https://github.com , çekme işlemi başlatılıyor...
 Girilen domainin bilgileri başarıyla çekildi. bulundugunuz dizini kontrol edin
 Fotograf başarıyla kaydedildi: github.com_SS.png
 
@@ -32,16 +47,24 @@ domain içerisinde bulunan linkler:
  1. https://github.com/features
  2. https://github.com/enterprise
  3. https://github.com/pricing
-Teknik detaylar
-Kullanılan paketler:
+```
 
-Colly - Scraping için
-ChromeDP - Screenshot için
+## Teknik detaylar
 
-Hatalar
+**Kullanılan paketler:**
+
+- [Colly](https://github.com/gocolly/colly) - Scraping için
+- [ChromeDP](https://github.com/chromedp/chromedp) - Screenshot için
+
+## Hatalar
+
 Bir şeyler ters giderse (yanlış domain, timeout, DNS hatası vs.) program sana söylüyor. Panik yok.
-👨‍💻
-Batuhan Başkurt
-@BatuhanBaskurt
 
-Not: Bu araç eğitim amaçlı. Scraping yaparken sitelerin kurallarına dikkat et.
+## 👨‍💻 
+
+**Batuhan Başkurt**  
+[@BatuhanBaskurt](https://github.com/BatuhanBaskurt)
+
+---
+
+*Not: Bu araç eğitim amaçlı. Scraping yaparken sitelerin kurallarına dikkat et.*
