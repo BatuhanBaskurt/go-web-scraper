@@ -1,7 +1,7 @@
 🕸️ Go Scraper & SS Tool
 Verdiğin herhangi bir web sitesinin linklerini toplayan, HTML'ini indiren ve sayfanın tam boy ekran görüntüsünü alan basit bir Go aracı.
 
-🛠️ Ne işe yarıyor?
+🛠️ Ne İşe Yarar?
 Link Ayıklama: Sayfadaki bütün href linklerini bulur ve ekrana basar.
 
 HTML Kayıt: Sayfanın kaynak kodunu .html olarak kaydeder.
@@ -19,16 +19,14 @@ go mod tidy
 Bash
 
 go run main.go
-Çalıştırdıktan sonra terminale URL'i (örn: https://google.com) yazman yeterli.
-
 📦 Gereksinimler
 Go
 
 Chrome/Chromium (Screenshot alabilmesi için sistemde yüklü olmalı)
 
 📝 Bilgi
-Dosya isimlerini URL'den otomatik temizleyip oluşturur.
+Dosya İsimleri: URL'den otomatik temizlenerek oluşturulur.
 
-Bağlantı hataları, timeout veya yanlış domain gibi durumlarda terminale hata detayını basar.
+Hata Yönetimi: Bağlantı hataları veya yanlış domain durumlarında terminale hata basar.
 
-Sayfa tam yüklensin diye ekran görüntüsü almadan önce 2 saniye bekler.
+Bekleme Süresi: Sayfa tam yüklensin diye ekran görüntüsü almadan önce 2 saniye bekler.
