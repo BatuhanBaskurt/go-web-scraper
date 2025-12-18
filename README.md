@@ -58,9 +58,9 @@ domain içerisinde bulunan linkler:
 
 ## Hatalar
 
-Bir şeyler ters giderse (yanlış domain, timeout, DNS hatası vs.) program sana söylüyor. Panik yok.
+Bir şeyler ters giderse (yanlış domain, timeout, DNS hatası vs.) program sana söylüyor. Sıkıntı yok.
 
-## 👨‍💻 
+## 
 
 **Batuhan Başkurt**  
 [@BatuhanBaskurt](https://github.com/BatuhanBaskurt)
